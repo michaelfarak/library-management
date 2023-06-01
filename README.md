@@ -1,3 +1,13 @@
+# Comments on this assignment
+
+This work can be improved by implementing a few missing features: 
+- add functionality to the edit button, using the same modal as the "add" button, populating the fields with existing data
+- add functionality to remove button, using the same data sharing service
+- implement the google books api
+- fix the sorting button
+- improve the general UI 
+
+
 # LibraryManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.

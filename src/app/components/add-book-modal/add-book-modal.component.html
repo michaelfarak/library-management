@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Add a new book</h1>
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit(bookForm.value)">
+  <div mat-dialog-content>
+
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" class="form-control">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author" class="form-control">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <input matInput formControlName="year" class="form-control">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="description" class="form-control">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button cdkFocusInitial [disabled]="!bookForm.valid" type="submit">Submit</button>
+  </div>
+</form>
+
